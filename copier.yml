@@ -1,0 +1,7 @@
+package_name:
+    type: str
+    help: What is your package name?
+
+project_description:
+  type: str
+  help: What is your project description?
