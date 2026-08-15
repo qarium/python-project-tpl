@@ -23,9 +23,9 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/pyproject.toml') }}
+          key: ${% raw %}{{ runner.os }}{% raw %}-pip-${% raw %}{{ hashFiles('**/pyproject.toml') }}{% raw %}
           restore-keys: |
-            ${{ runner.os }}-pip-
+            ${% raw %}{{ runner.os }}{% raw %}-pip-
 
       - uses: qarium/strictacode/.github/actions/analyze@0.0.x
         with:

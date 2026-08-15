@@ -13,5 +13,5 @@ jobs:
     with:
       src-package: {{package_name}}
     secrets:
-      PYPI_API_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
-      ZAI_TOKEN: ${{ secrets.ZAI_TOKEN }}
+      PYPI_API_TOKEN: ${% raw %}{{ secrets.PYPI_API_TOKEN }}{% raw %}
+      ZAI_TOKEN: ${% raw %}{{ secrets.ZAI_TOKEN }}{% raw %}
