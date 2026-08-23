@@ -24,6 +24,7 @@ stages:
     agent: reviewer
   accept-result:
     manual: false
+    agent: tester
 
 extend:
   build:
